@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Created by Ingthor on 31.8.2016.
+ * Class for each Customer that has accounts
  */
 public class Customer {
 
@@ -12,9 +13,13 @@ public class Customer {
     private String customerDateOfBirth;
     protected String customerAddress;
 
-    public Customer() {
-    }
-
+    /**
+     * Initializes the variables in the class
+     * @param customerId
+     * @param customerName
+     * @param customerDateOfBirth
+     * @param customerAddress
+     */
     public Customer(int customerId, String customerName, String customerDateOfBirth, String customerAddress) {
         this.customerId = customerId;
         this.customerName = customerName;

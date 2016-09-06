@@ -1,7 +1,5 @@
 package Salarycomp;
 
-import java.util.DoubleSummaryStatistics;
-
 /**
  * Created by Ingthor on 30.8.2016.
  */
@@ -13,6 +11,16 @@ public class SalaryCalculator {
     private static String LOWBASEPAY = "The base pay is too low";
     private static String TOOMANYHOURS = "Too many hours";
 
+
+    /**
+     * Calculates the salary of each employee with the parameters sent in
+     * Makes sure that no employee is getting payed too little, working too much
+     * and that they get their overtime payed.
+     * If something of these conditions are met it prints an error message
+     * @param pay Integer value what the employee earns per hour
+     * @param hours Integer value how many hours the employee worked
+     * @return totalSalary String what the employee gets paid
+     */
     public String calculatePay(double pay, double hours)
     {
         double totalSalary = 0;

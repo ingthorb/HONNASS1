@@ -2,7 +2,8 @@ package Banksrus;
 
 /**
  * Created by Ingthor on 31.8.2016.
- *
+ * Abstract class Account for all accounts for all
+ * customers. Is a Layer Supertype
  */
 public abstract class Account {
 
